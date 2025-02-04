@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max</title>
+    
+</head>
+<body>
+    
+    <script>
+        let n = prompt("Enter Number of numbers");
+        let arr = [];
+
+        for(i =0; i<n ;i ++) {
+            arr[i] = prompt("Enter NUmber " + (i + 1));
+        }
+        let m = 0;
+        arr.forEach( (em) => {
+            if (em > m) {
+                m = em;
+            }
+        })
+
+        console.log(m);
+        
+    </script>
+</body>
+</html>
