@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part - 6</title>
+  
+</head>
+<body>
+    
+    <script>
+        
+        let n = prompt("Enter Number ");
+        let a= []
+        a = n.split("");
+        let sum =1;
+        a.forEach(i => {
+            sum += i * a.length;
+        })
+
+        if(sum == n){
+            console.log(n + " is an armstong Number")
+        }else {
+            console.log(n + " is not an armstong Number")
+
+        }
+        
+        
+    </script>
+</body>
+</html>
