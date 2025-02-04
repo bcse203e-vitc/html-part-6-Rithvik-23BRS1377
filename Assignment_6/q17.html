@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Decimal & Binary Converter</title>
+</head>
+<body>
+
+    <script>
+        function decimalToBinary(decimal) {
+            let binary = "";
+            while (decimal > 0) {
+                binary = (decimal % 2) + binary;
+                decimal = Math.floor(decimal / 2);
+            }
+            return binary === "" ? "0" : binary;
+        }
+
+        function binaryToDecimal(binary) {
+            let decimal = 0;
+            for (let i = 0; i < binary.length; i++) {
+                decimal = decimal * 2 + (binary[i] - 0);
+            }
+            return decimal;
+        }
+
+        let choice = prompt("Enter 1 for Decimal to Binary, 2 for Binary to Decimal:");
+
+        if (choice === "1") {
+            let decimal = prompt("Enter Decimal Number:") - 0;
+            console.log(decimalToBinary(decimal));
+        } else if (choice === "2") {
+            let binary = prompt("Enter Binary Number:");
+            console.log(binaryToDecimal(binary));
+        } else {
+            console.log("Invalid Choice");
+        }
+    </script>
+
+</body>
+</html>
