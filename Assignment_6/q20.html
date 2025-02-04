@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Count</title>
+</head>
+<body>
+
+    <script>
+        function countCharacters(str) {
+            let count = {};
+            for (let i = 0; i < str.length; i++) {
+                let char = str[i];
+                if (count[char]) {
+                    count[char]++;
+                } else {
+                    count[char] = 1;
+                }
+            }
+            return count;
+        }
+
+        let input = prompt("Enter a string:");
+        console.log(countCharacters(input));
+    </script>
+
+</body>
+</html>
