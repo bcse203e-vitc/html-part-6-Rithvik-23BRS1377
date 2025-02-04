@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part - 6</title>
+   
+</head>
+<body>
+    
+    <script>
+        
+        let n = prompt("Enter String ");
+        let a = []
+        a = n.split("");
+        let v =0;
+        let c =0;
+        a.forEach ( i => {
+           
+            if ( i == "a" || i == "e" || i == "i" || i == "o" || i == "u"){
+                v += 1;
+            }else{
+                c += 1;
+            }
+        })
+        
+        console.log("Number of vowles = " + v);
+        console.log("Number of consonant = " + c);
+        
+    </script>
+</body>
+</html>
